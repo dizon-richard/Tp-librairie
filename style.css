@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Titre */
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Bouton déconnexion */
+a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+a:hover {
+  background-color: #cc0000;
+}
+
+/* Zone de bienvenue */
+h2 {
+  color: #555;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Champ de recherche */
+input[type="text"] {
+  padding-bottom: 12px;
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+/* Bouton rechercher */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 50px;
+  padding-top: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Résultats */
+#results {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.book {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.book img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.book h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.book p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.book button {
+  background-color: #28a745;
+  margin-top: 10px;
+}
+
+.book button:hover {
+  background-color: #218838;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 1rem;
+}
