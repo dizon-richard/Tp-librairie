@@ -18,6 +18,7 @@
   <nav>
     <a class="mr-4" href="home.php">Home</a>
     <a class="mr-4" href="about.php">About</a>
+    <a class="mr-4" href="profil.php">Profil</a>
   </nav>
 
   <div class="profile absolute right-8 flex items-center">

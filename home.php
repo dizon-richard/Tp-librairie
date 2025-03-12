@@ -6,7 +6,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-include "partials/header_deco.php";
+include "partials/header.php";
 
 ?>
 
