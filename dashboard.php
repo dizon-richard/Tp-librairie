@@ -1,12 +1,4 @@
 <?php
-// session_start();
-
-// if (!isset($_SESSION['user_id'])) {
-//     header("Location: SignIn.php");
-//     exit();
-// }
-
-// include "partials/header.php";
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
@@ -14,7 +6,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-include "partials/header.php";
+include "partials/header_deco.php";
 ?>
 
 <!DOCTYPE html>
@@ -25,6 +17,25 @@ include "partials/header.php";
     <title>La Riri's librairie</title>
     <script defer src="app.js"></script>
     <link rel="stylesheet" href="style.css">
+    <style>
+        #favorites-container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px;
+  width: 444px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+</style>
 </head>
 <body>
     <h1>La Riri's librairie</h1>
@@ -51,28 +62,3 @@ include "partials/header.php";
 <?php
 include "partials/footer.php";
 ?>
-
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script defer src="app.js"></script>
-    <link rel = "stylesheet" href = "style.css">
-</head>
-<body>
-    <h1>La Riri's librairie</h1>
-
-    <h2>Bienvenue, <?= htmlspecialchars($_SESSION['name']) ?> !</h2>
-    <input type="text" id="searchInput" placeholder="Rechercher un livre">
-    <button class="boutton" onclick="searchBooks()">Rechercher</button>
-    <div id="results"></div>
-    <div id="favorites-container"></div>
-    <button onclick="addToFavorites('12345', 'Titre du Livre', 'Auteur 1, Auteur 2', 'https : //lien-vers-thumbnail.jpg')">
-    Ajouter aux favoris
-</button>
-
-</body>
-</html> -->

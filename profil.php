@@ -57,9 +57,8 @@ include 'config/DataBase.php';
     localStorage.getItem("avatar") || "default-avatar.png";
 });
 
-document
-  .getElementById("avatarInput")
-  .addEventListener("change", function (event) {
+  document.getElementById("avatarInput")
+  document.addEventListener("change", function (event) {
     const file = event.target.files[0];
     if (file) {
       const reader = new FileReader();
